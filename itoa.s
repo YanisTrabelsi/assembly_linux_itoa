@@ -36,7 +36,7 @@ print_int:
     mov r8, rcx
     mov r9, 1
     sub rsp, 8
-    mov byte ptr [rsp], 13
+    mov byte ptr [rsp], 10
   loop:
     cmp r8, 0
     je end
