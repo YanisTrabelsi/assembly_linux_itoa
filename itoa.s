@@ -10,16 +10,7 @@ _start:
 
     and rsp, 0xfffffffffffffff0
     
-    sub rsp, 4 + 4
-    mov dword ptr [rsp + 4], 32
-    mov dword ptr [rsp], 10
-    mov eax, dword ptr [rsp + 4]
-    mov ebx, dword ptr [rsp]
-    
-    add rax, rbx
-    mov rcx, rax
-    
-    mov rcx, 27122003
+    mov rcx, 424143
     call print_int
     
     mov rsp, rbp
